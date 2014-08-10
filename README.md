@@ -11,4 +11,7 @@ Gnome Shell Extension enabling missing Compiz plugin "Place Windows". When enabl
 
 ## Bugs
 
-Either [here](https://github.com/itprojects/place.windows.in.center/issues) or in the Gnome Shell Extension Page, using "bug report" (when logged in). Please keep in mind this was made for Gnome 3.12.2.
+Bus can be filed [here](https://github.com/itprojects/place.windows.in.center/issues) or in the Gnome Shell Extension Page, using "bug report" (when logged in). Please keep in mind this was made for Gnome 3.12.2.
+
+## License
+GNU General Public License, version 3 or later. See the LICENSE file for details.
