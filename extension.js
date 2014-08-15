@@ -21,10 +21,12 @@ function _placeWindow(win) {
 	if (win == null) return;
 	/* 0 = Normal Window, 3 = (non-modal) dialog */
 	if (win.get_window_type() == 0 || win.get_window_type() == 3) {
-		let rect = win.get_frame_rect();
+		//let rect = win.get_frame_rect();//Used in 3.12.2
+		let rect = win.get_outer_rect();//Used in 3.10.4
+
 		let monitor = Main.layoutManager.primaryMonitor;
-		let x = monitor.x//0;
-		let y = monitor.y//0;
+		let x = monitor.x;
+		let y = monitor.y;
 
 		if (!win.maximized_horizontally && !win.maximized_vertically) {
 			x += Math.floor((monitor.width - rect.width) / 2);
