@@ -24,7 +24,7 @@ function _placeWindow(win) {
 		//let rect = win.get_frame_rect();//Used in 3.12.2
 		let rect = win.get_outer_rect();//Used in 3.10.4
 
-		let monitor = Main.layoutManager.primaryMonitor;
+		let monitor = Main.layoutManager.monitors[global.screen.get_current_monitor()];
 		let x = monitor.x;
 		let y = monitor.y;
 
